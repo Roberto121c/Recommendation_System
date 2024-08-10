@@ -5,6 +5,8 @@
 * Compared two methods: ALS implemented from scratch versus SVD using the Surprise library.
 * The scratch-built model slightly outperformed the library-based model, but its higher complexity made it less practical and reliable.
 
+![](images/user_activity_movie_popularity.jpg)
+
 ### EDA
 * Conducted EDA to gain insights into the dataset and its characteristics.
 * Key finding: Users who review more movies tend to review less popular titles.
@@ -27,7 +29,7 @@
 * The final results are Train MSE: 0.6308, Test MSE: 0.6377
 
 ### Conclusions
-Model 1 exhibited slightly better performance than Model 2 (0.5126 vs. 0.6377).
-Model 2 was faster overall, though its runtime increased due to Cross-Validation, unlike Model 1, which did not have parameter tuning.
-Model 1 was more complex to code but conceptually simpler, adhering to the formula for regularized least squares.
-Model 1 could benefit from further vectorization to improve its runtime performance but it would make it more complex as it will not follow the regularized least squares formula as much.
+* Model 1 exhibited slightly better performance than Model 2 (0.5126 vs. 0.6377).
+* Model 2 was faster overall, though its runtime increased due to Cross-Validation, unlike Model 1, which did not have parameter tuning.
+* Model 1 was more complex to code but conceptually simpler, adhering to the formula for regularized least squares.
+* Model 1 could benefit from further vectorization to improve its runtime performance but it would make it more complex as it will not follow the regularized least squares formula as much.
